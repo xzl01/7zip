@@ -1,5 +1,313 @@
-template-repository (1.0-1) unstable; urgency=medium
+7zip (23.01+dfsg-6) unstable; urgency=medium
 
-  * Initial release
+  * Remove redundant Breaks line
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Mon, 21 Aug 2023 09:51:32 +0900
+
+7zip (23.01+dfsg-5) unstable; urgency=medium
+
+  * Avoid file conflicts when in unpack 7zip-standalone package
+    (Closes: #1050118)
+  * Use more better word for changelog
+  * Fix typo
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Mon, 21 Aug 2023 00:03:12 +0900
+
+7zip (23.01+dfsg-4) unstable; urgency=medium
+
+  * Move /usr/bin/7zz to 7zip-standalone package (Closes: #1042452)
+  * Change recommends to suggests about 7zip-standalone package
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sun, 20 Aug 2023 17:01:29 +0900
+
+7zip (23.01+dfsg-4~exp1) experimental; urgency=medium
+
+  * Move /usr/bin/7zz to 7zip-standalone package
+  * Update ignore list
+  * Replace with p7zip
+  * Import p7zip(1) script from p7zip package
+  * Provides p7zip to replace it
+  * Add Conflicts to remove p7zip from machine
+  * Lintian fix
+  * Man page link fix
+  * Update man page about plugins support
+  * Cosmetic fix
+  * Update autopkgtest
+  * Use 7z for full benchmark test
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sun, 06 Aug 2023 21:18:17 +0900
+
+7zip (23.01+dfsg-3) unstable; urgency=medium
+
+  * Rediff patches
+  * Forward patches to upstream
+  * Revise armhf patch
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Fri, 23 Jun 2023 08:10:08 +0900
+
+7zip (23.01+dfsg-2) unstable; urgency=medium
+
+  * Compilation fix for armel/armhf/powerpc
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 21 Jun 2023 12:52:27 +0900
+
+7zip (23.01+dfsg-1) unstable; urgency=medium
+
+  * Rediff patches
+  * Remove unwanted exec permissions
+  * New upstream version 23.01+dfsg
+  * Rediff patches
+  * Rediff patches
+  * Renumber patches
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 21 Jun 2023 03:29:25 +0900
+
+7zip (22.01+dfsg-9) unstable; urgency=medium
+
+  This version provides 7z/7za/7zr commands as 7z.7zip/7za.7zip/7zr.7zip .
+
+  * Remove unwanted exec permissions when importing from upstream tarball
+  * Strict paths in post-unpack hook
+  * Remove unwanted exec permissions
+  * Rediff patches
+  * Build other flavors binary
+  * Use dh-exec to install with another name
+  * Update ignore list
+  * Install files to another place
+  * Install trampoline scripts to invoke real executable
+  * Install "7za" and "7zr"
+  * Move manual path
+  * Add alternative selection
+  * Update clean target
+  * Add "7zip" prefix to packager files
+  * Update ignore list
+  * Rediff patches
+  * Use conf-mode
+  * Add tests for other binaries
+  * Show supported format list
+  * Enable Rar format for 7z as "p7zip" package
+  * Mention "7zip-rar" package to support RAR files
+  * Update copyright years
+  * Text fix
+  * Update manual page
+  * Add manuals for variant binaries
+  * Update alternative list
+  * Disable alternative selection
+  * Add some text about variant commands to manual page
+  * Fixup test code
+  * Rediff patches
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 31 May 2023 23:03:45 +0900
+
+7zip (22.01+dfsg-8) unstable; urgency=medium
+
+  * Upgrade Debian standards
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sun, 18 Dec 2022 21:09:42 +0900
+
+7zip (22.01+dfsg-7) unstable; urgency=medium
+
+  Reproducible build tester in Sid (unstable) fails to strip some debug infos
+  like build paths. This makes fail to reproducible build.
+
+  * Rediff patches
+  * Revert "Enable link time optimization (LTO)"
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Fri, 09 Dec 2022 20:26:57 +0900
+
+7zip (22.01+dfsg-6) unstable; urgency=medium
+
+  * Remove unwanted hack for object files
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 07 Dec 2022 21:34:51 +0900
+
+7zip (22.01+dfsg-5) unstable; urgency=medium
+
+  * Enable link time optimization (LTO)
+  * Manually de-reference pointers
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 03 Dec 2022 19:40:39 +0900
+
+7zip (22.01+dfsg-4) unstable; urgency=medium
+
+  * Revert "Enable link time optimization (LTO)"
+  * Revert "Manually de-reference pointers"
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 27 Aug 2022 20:28:56 +0900
+
+7zip (22.01+dfsg-3) unstable; urgency=medium
+
+  * Enable link time optimization (LTO)
+  * Manually de-reference pointers
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 27 Aug 2022 15:02:19 +0900
+
+7zip (22.01+dfsg-2) unstable; urgency=medium
+
+  * Rebuild with GCC 12 (Closes: #1012886)
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 23 Jul 2022 10:16:24 +0900
+
+7zip (22.01+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 22.01+dfsg
+  * Rediff patches
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 16 Jul 2022 23:15:07 +0900
+
+7zip (22.00+dfsg-2) unstable; urgency=medium
+
+  * Initialize uninitialized value
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Tue, 21 Jun 2022 15:07:28 +0900
+
+7zip (22.00+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 22.00+dfsg
+  * Rediff patches
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Tue, 21 Jun 2022 13:19:35 +0900
+
+7zip (21.07+dfsg-5) unstable; urgency=medium
+
+  * Upgrade Debian standards
+  * ftbfs fix with GCC-12
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Fri, 17 Jun 2022 08:22:16 +0900
+
+7zip (21.07+dfsg-4) unstable; urgency=medium
+
+  * More generalize STDIN handling when in password input
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 23 Feb 2022 17:53:04 +0900
+
+7zip (21.07+dfsg-3) unstable; urgency=medium
+
+  * Disable local echo display when in input passwords (Closes: #1006238)
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Tue, 22 Feb 2022 22:14:45 +0900
+
+7zip (21.07+dfsg-2) unstable; urgency=medium
+
+  * Upstream now offers ".tar.xz" archive
+  * Add "+dfsg" for repacked upstream source archive
+  * Refactor Debian version string
+  * Reorder watch file options
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 22 Jan 2022 16:00:16 +0900
+
+7zip (21.07+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 21.07+dfsg
+  * Rediff patches
+  * Renumber patches
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Tue, 28 Dec 2021 18:50:38 +0900
+
+7zip (21.06+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 21.06+dfsg
+  * Rediff patches
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 01 Dec 2021 08:54:09 +0900
+
+7zip (21.04~beta+dfsg-1) unstable; urgency=medium
+
+  * Use dpkg snippet to get cross-build environment
+  * New upstream version 21.04~beta+dfsg
+  * Refresh patch queue
+  * Reorder patch
+  * Patch is once forwarded to upstream
+  * Rename patch
+  * Renumber patch
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 03 Nov 2021 14:44:05 +0900
+
+7zip (21.03~beta+dfsg-6) unstable; urgency=medium
+
+  * Add upstream metadata
+  * Add upstream change log to metadata
+  * Typo fix
+  * GCC 11 wants "if" statement must guarded by {} (Closes: #997097)
+  * Guard ARM v8 feature from old architecture
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Sat, 23 Oct 2021 21:41:54 +0200
+
+7zip (21.03~beta+dfsg-5) unstable; urgency=medium
+
+  * Update ARM NEON patch
+  * Use "__ARM_ARCH" to split "armel" and "armhf"
+  * Define AT_HWCAP if not defined on kfreebsd
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Thu, 23 Sep 2021 02:08:08 +0900
+
+7zip (21.03~beta+dfsg-4) unstable; urgency=medium
+
+  * Disable SHA hardware acceleration on armel
+  * Rename patch file
+  * Use pre-defined macro for ARM NEON code
+  * Add GNU Hurd section
+  * Add simple benchmark test for armhf
+  * Use pipe instead of intermediate files
+  * Use __ARM_NEON instead of __ARM_NEON__
+  * Add more NEON fix
+  * Rename patch file
+  * Add kFreeBSD fix to avoid sysinfo(2) usage
+  * Rename patch file
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 22 Sep 2021 09:41:34 +0200
+
+7zip (21.03~beta+dfsg-3) unstable; urgency=medium
+
+  [ YOKOTA Hiroshi ]
+  * Disable hardware AES support on armel
+  * Define UTIME_OMIT if not defined yet
+  * Typo fix
+  * Trivial fix for hurd-i386
+
+ -- Dylan Aïssi <daissi@debian.org>  Wed, 15 Sep 2021 16:14:46 +0200
+
+7zip (21.03~beta+dfsg-2) unstable; urgency=medium
+
+  * Update versioning scheme in watch file
+  * Simplify version scanner
+  * Use more Perl regex syntax
+  * Refactor regex
+  * Upgrade Debian standards version
+  * Update man page
+  * Use synopsis macro
+  * Use more macros
+  * Add web title name
+  * Allow cross build
+  * Reorder variables
+  * Use upstream value for cross compilation
+  * Use GCC 10 warning options
+  * Add architecture specific compiler options
+  * Allow unused parameter when big endian architectures
+  * Use pre-processor macro to disable NEON ABI
+  * Add PATH_MAX fix for GNU Hurd
+  * Update to better PATH_MAX fix
+  * Simplify "unused" attributes code
+  * Use C++ functions
+  * Add another unused parameter to patch file
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Wed, 15 Sep 2021 14:29:19 +0900
+
+7zip (21.03~beta+dfsg-1) unstable; urgency=medium
+
+  [ YOKOTA Hiroshi ]
+  * New upstream version 21.03~beta+dfsg
+  * Use pristine-tar by default
+  * Refresh patch queue
+  * Renumber patch queue
+
+  [ Dylan Aïssi ]
+  * Update d/copyright for new upstream files
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Thu, 22 Jul 2021 21:47:30 +0900
+
+7zip (21.02~alpha+dfsg-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #988689)
+
+ -- Dylan Aïssi <daissi@debian.org>  Tue, 22 Jun 2021 09:50:30 +0200
