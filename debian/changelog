@@ -1,3 +1,48 @@
+7zip (23.01+dfsg-12) unstable; urgency=medium
+
+  * Forward 64 bits time patch to upstream
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Thu, 11 Apr 2024 19:53:23 +0900
+
+7zip (23.01+dfsg-11) unstable; urgency=medium
+
+  * 64bit time data type fix
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Thu, 11 Apr 2024 15:31:30 +0900
+
+7zip (23.01+dfsg-10) unstable; urgency=medium
+
+  * Upgrade Debian standards
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Thu, 11 Apr 2024 12:40:49 +0900
+
+7zip (23.01+dfsg-9) unstable; urgency=medium
+
+  * Typo fix
+  * Add Lintian overrides for source code
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Thu, 11 Apr 2024 11:32:28 +0900
+
+7zip (23.01+dfsg-8) unstable; urgency=medium
+
+  * Drop hard dependency in 7zip-standalone to minimize installation size
+    (Closes: #1061485)
+  * Add man page for 7zz(1) instead of file link
+  * Has both Breaks+Replaces and Conflicts against p7zip-full and p7zip
+    (Closes: #1061486)
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Fri, 26 Jan 2024 00:36:59 +0900
+
+7zip (23.01+dfsg-7) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * rules: Generalize DEB_HOST_ARCH testing.
+
+  [ YOKOTA Hiroshi ]
+  * Cosmetic fix
+
+ -- YOKOTA Hiroshi <yokota.hgml@gmail.com>  Mon, 13 Nov 2023 12:13:13 +0900
+
 7zip (23.01+dfsg-6) unstable; urgency=medium
 
   * Remove redundant Breaks line
